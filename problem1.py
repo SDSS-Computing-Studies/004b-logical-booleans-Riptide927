@@ -19,3 +19,12 @@ Enter a number: 48
 """
 
 #! python3
+
+a = int(input("Give me a number\n"))
+b = a / 6
+c = b / 8
+
+if  b % 1==0 and c % 1 != 0:
+    print(a,"is frue")
+else:
+    print(a,"is not frue")

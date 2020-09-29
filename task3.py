@@ -15,3 +15,10 @@ example:
 Enter a number: -3
 -3 is not a positive integer
 """
+a = int(input("Give me a number\n"))
+if a < 0:
+    print(a,"is not a positive integer")
+elif a > 0:
+    print(a,"is a positive integer.")
+elif a ==0:
+    print("your number is zero")
