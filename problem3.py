@@ -41,6 +41,12 @@ if c >= b and c >= a:
     C = c
     B = b
     A = a
+if B > A:
+    B=B
+if A > B:
+    A=B
+
+
 an= str(A)
 bn= str(B)
 cn= str(C)
