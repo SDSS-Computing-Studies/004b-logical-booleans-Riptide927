@@ -42,15 +42,20 @@ if c >= b and c >= a:
     B = b
     A = a
 if B > A:
-    B=B
-if A > B:
-    A=B
-
-
-an= str(A)
-bn= str(B)
-cn= str(C)
-if (A**2)+ (B**2) == (C**2):
-    print(an + "," + bn +","+ cn + " form a Pythagorean triple")
-else:
-    print(an + "," + bn +","+ cn + " do not form a Pythagorean triple")
+    an= str(A)
+    bn= str(B)
+    cn= str(C)
+    if (A**2)+ (B**2) == (C**2):
+        print(an + "," + bn +","+ cn + " form a Pythagorean triple")
+    else:
+        print(an + "," + bn +","+ cn + " do not form a Pythagorean triple")
+elif A > B:
+    A2 = B
+    B2 = A
+    an= str(A2)
+    bn= str(B2)
+    cn= str(C)
+    if (A2**2)+ (B2**2) == (C**2):
+        print(an + "," + bn +","+ cn + " form a Pythagorean triple")
+    else:
+        print(an + "," + bn +","+ cn + " do not form a Pythagorean triple")
