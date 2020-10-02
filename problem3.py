@@ -29,18 +29,22 @@ Enter an integer=>2
 a = int(input("Give me a number "))
 b = int(input("Give me a number "))
 c = int(input("Give me a number "))
-an= str(a)
-bn= str(b)
-cn= str(c)
-if a > b and a > c:
-    c = a
-    b = b
-    a = c
-if b > a and b > c:
-    c = b
-    b = a
-    a = c
-if (a**2)+ (b**2) == (c**2):
+if a >= b and a >= c:
+    C = a
+    B = b
+    A = c
+if b >= a and b >= c:
+    C = b
+    B = a
+    A = c
+if c >= b and c >= a:
+    C = c
+    B = b
+    A = a
+an= str(A)
+bn= str(B)
+cn= str(C)
+if (A**2)+ (B**2) == (C**2):
     print(an + "," + bn +","+ cn + " form a Pythagorean triple")
 else:
     print(an + "," + bn +","+ cn + " do not form a Pythagorean triple")
